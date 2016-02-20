@@ -1,7 +1,6 @@
 function Quiz(cards) {
   this.cards = cards;
   this.currentCardIndex = 0;
-  // this.shuffledCards = this.shuffle(this.cards);
 }
 
 Quiz.prototype.shuffle = function(cards) {
@@ -14,8 +13,8 @@ Quiz.prototype.hasEnded = function() {
   return this.currentCardIndex >= this.cards.length;
 }
 
-Quiz.prototype.percentComplete = function() {
-  return Math.floor(((this.currentCardIndex + 1) / this.cards.length) * 100);
+Quiz.prototype.percentComplete = function(idx) {
+  return Math.floor((idx / this.cards.length) * 100);
 }
 
 Quiz.prototype.getCurrentCard = function() {

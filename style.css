@@ -13,14 +13,26 @@ body {
   font-size: 50px;
 }
 
-/** {
-  border: 1px black solid;
-}*/
-
 textarea {
   resize: none;
 }
 
 div {
   margin-bottom: 10px;
+}
+
+#card-display {
+  background-color: #AAA;
+  text-align: center;
+  width: 400px;
+  line-height: 250px;
+}
+
+#card-display p {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#after-options {
+  display: none;
 }
